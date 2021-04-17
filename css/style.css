@@ -1,0 +1,23 @@
+div, h1{
+	text-align: center;
+  }
+.button
+{
+margin: 10px;
+}
+body{
+	text-align: center;
+
+	font-family: 'Zen Dots', cursive;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background: rgb(255,255,255);
+	background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(9,9,121,0) 35%, rgba(0,212,255,1) 100%);
+	background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(9,9,121,0) 35%, rgba(0,212,255,1) 100%);
+	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(9,9,121,0) 35%, rgba(0,212,255,1) 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#00d4ff",GradientType=1);
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
