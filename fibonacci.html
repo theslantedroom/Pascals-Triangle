@@ -34,7 +34,6 @@ const memoFibonacci = (n, memo) => {
 	};
 	// special cases, fib[0] = 0 and fib[1]=1
 	if (n <= 1) {
-		printAnswerM(n);
 		return n;
 	}
 	
@@ -42,7 +41,6 @@ const memoFibonacci = (n, memo) => {
 	let answer = memoFibonacci(n-1, memo) + memoFibonacci(n-2, memo);
 	memo[n] = answer;
 
-	printAnswerM(answer);
 	return answer;
 }
 	</code>
