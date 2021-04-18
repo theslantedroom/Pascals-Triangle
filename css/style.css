@@ -11,6 +11,7 @@ div, h1{
 margin: 10px;
 }
 body{
+	box-sizing: border-box;
 	text-align: center;
 	width: 100%;
 	font-family: 'Zen Dots', cursive;
@@ -25,6 +26,10 @@ body{
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+p{
+	box-sizing: border-box;
+	width: 100%;
 }
 
 .input{
@@ -47,7 +52,11 @@ li{
 	bottom: 12px;
 	background-color: aquamarine;
 }
-
+pre{
+	width: 98%;
+	margin: auto;
+	box-sizing: border-box;
+}
 pre code {
 	background-color: #eee;
 	border: 1px solid #999;
