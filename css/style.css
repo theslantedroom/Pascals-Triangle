@@ -12,7 +12,7 @@ margin: 10px;
 }
 body{
 	text-align: center;
-
+	width: 100%;
 	font-family: 'Zen Dots', cursive;
 	background-repeat: no-repeat;
 	background-size: contain;
@@ -48,10 +48,15 @@ li{
 	background-color: aquamarine;
 }
 
-pre code {
+code {
 	background-color: #eee;
 	border: 1px solid #999;
 	display: block;
-	padding: 20px;
 	text-align: left;
+	width: 100%;
+	overflow: scroll;
+}
+
+pre {
+	width: 100%;
 }

@@ -27,33 +27,33 @@
 	<div id='parent'></div>
 	<pre>
 		<code>
-			var generate = function(numRows) {
-  
-				//make array of length numRows
-				let rowsArray = [];
-				
-				  //   make the rows - for loop - each iteration appends a row to rowsArray
-				  for (i = 0; i <= numRows-1; i++ ){
-					let newRow = [i];
-					newRow[0] = 1;
-					newRow[i] = 1;
-					rowsArray[i] = newRow;
-				  };
+var generate = function(numRows) {
 
-				  for (j = 0; j <= numRows-1; j++){
-					// calculate each number based on the previous row - first and last are always 1
-					for (k = 0; k <= j; k++){
-					  //skip first iteration
-					  if (j >= 1){
-						// skip first and last numbers
-						if (k != 0 && k != j){
-						  rowsArray[j][k] = rowsArray[j-1][k] + rowsArray[j-1][k-1];
-						}
-					  }
-					};
-				  };
-				return rowsArray;
-			  };
+	//make array of length numRows
+	let rowsArray = [];
+	
+		//   make the rows - for loop - each iteration appends a row to rowsArray
+		for (i = 0; i <= numRows-1; i++ ){
+		let newRow = [i];
+		newRow[0] = 1;
+		newRow[i] = 1;
+		rowsArray[i] = newRow;
+		};
+
+		for (j = 0; j <= numRows-1; j++){
+		// calculate each number based on the previous row - first and last are always 1
+		for (k = 0; k <= j; k++){
+			//skip first iteration
+			if (j >= 1){
+			// skip first and last numbers
+			if (k != 0 && k != j){
+				rowsArray[j][k] = rowsArray[j-1][k] + rowsArray[j-1][k-1];
+			}
+			}
+		};
+		};
+	return rowsArray;
+};
 		</code>
 	</pre>
 
