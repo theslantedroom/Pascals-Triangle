@@ -29,14 +29,14 @@
 
 	<pre>
 		<code>
-			const combineList = function(listOriginal,listAdd,listDelete) {
-				let merged = listOriginal.concat(listAdd); 
-				let answer = [...new Set(merged)];
-				answer = answer.filter( function(x) {
-				  return !listDelete.includes(x);
-				} );
-				return answer;
-			};
+const combineList = function(listOriginal,listAdd,listDelete) {
+	let merged = listOriginal.concat(listAdd); 
+	let answer = [...new Set(merged)];
+	answer = answer.filter( function(x) {
+		return !listDelete.includes(x);
+	} );
+	return answer;
+};
 		</code>
 	</pre>
 

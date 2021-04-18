@@ -26,18 +26,18 @@
 <h4>This is a Memoization solution with runtime of (2n). </h4>
 <pre>
 	<code>
-		const memoFibonacci = (n, memo) => {
-			memo = memo || {};
-		  
-			if (memo[n]) {
-			  return memo[n];   
-			};
-			if (n <= 1) {
-			  return n;
-			}
-			let answer = memo[n] = memoFibonacci(n-1, memo) + memoFibonacci(n-2, memo);
-			return answer;
-		}
+const memoFibonacci = (n, memo) => {
+	memo = memo || {};
+	
+	if (memo[n]) {
+		return memo[n];   
+	};
+	if (n <= 1) {
+		return n;
+	}
+	let answer = memo[n] = memoFibonacci(n-1, memo) + memoFibonacci(n-2, memo);
+	return answer;
+}
 	</code>
 </pre>
 	
@@ -50,13 +50,13 @@
 <h4>This is a recursive solution using no for or while loops, terrible runtime of (2^n). do Not go over 30 or it will take too long to process.</h4>
 <pre>
 	<code>
-		var recursiveFibonacci = function(n) {
-			if ( n <= 1){
-			  return n;  
-			} 
-			let answer = recursiveFibonacci(n-1)+recursiveFibonacci(n-2);
-			return answer;
-		};
+var recursiveFibonacci = function(n) {
+	if ( n <= 1){
+		return n;  
+	} 
+	let answer = recursiveFibonacci(n-1)+recursiveFibonacci(n-2);
+	return answer;
+};
 	</code>
 </pre>
 
