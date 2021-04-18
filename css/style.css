@@ -55,5 +55,6 @@ pre code {
 	text-align: left;
 	width: 100%;
 	overflow: scroll;
-  padding: 20px;
+  	padding: 20px;
+	box-sizing: border-box;
 }
