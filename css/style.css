@@ -17,9 +17,9 @@ body{
 	background-repeat: no-repeat;
 	background-size: contain;
 	background: rgb(255,255,255);
-	background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(9,9,121,0) 35%, rgba(0,212,255,1) 100%);
-	background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(9,9,121,0) 35%, rgba(0,212,255,1) 100%);
-	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(9,9,121,0) 35%, rgba(0,212,255,1) 100%);
+	background: -moz-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(9,9,121,0) 10%, rgba(0,212,255,1) 40%);
+	background: -webkit-linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(9,9,121,0) 10%, rgba(0,212,255,1) 40%);
+	background: linear-gradient(0deg, rgba(255,255,255,0) 0%, rgba(9,9,121,0) 10%, rgba(0,212,255,1) 40%);
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#00d4ff",GradientType=1);
     height: 100%;
     margin: 0;
@@ -27,7 +27,7 @@ body{
     background-attachment: fixed;
 }
 
-#input{
+.input{
 	font-size: 1.3em;
 	width: 100px;
 	margin: auto;
@@ -44,5 +44,14 @@ li{
 }
 #back{
 	position: fixed;
-	top: 12px;
+	bottom: 12px;
+	background-color: aquamarine;
+}
+
+pre code {
+	background-color: #eee;
+	border: 1px solid #999;
+	display: block;
+	padding: 20px;
+	text-align: left;
 }
