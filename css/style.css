@@ -48,7 +48,7 @@ li{
 	background-color: aquamarine;
 }
 
-code {
+pre code {
 	background-color: #eee;
 	border: 1px solid #999;
 	display: block;
@@ -57,6 +57,3 @@ code {
 	overflow: scroll;
 }
 
-pre {
-	width: 100%;
-}
