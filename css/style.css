@@ -1,6 +1,11 @@
+a{
+	font-size: 1.3em;
+	display: block;
+}
+
 div, h1{
 	text-align: center;
-  }
+}
 .button
 {
 margin: 10px;
@@ -20,4 +25,24 @@ body{
     margin: 0;
     background-repeat: no-repeat;
     background-attachment: fixed;
+}
+
+#input{
+	font-size: 1.3em;
+	width: 100px;
+	margin: auto;
+}
+
+li{
+	list-style-type: none;
+	width: 100%;
+	padding: 5px;
+	margin: auto;
+}
+#answer{
+	font-size: 30px;
+}
+#back{
+	position: fixed;
+	top: 12px;
 }
