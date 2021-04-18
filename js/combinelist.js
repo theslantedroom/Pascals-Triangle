@@ -3,7 +3,7 @@ let listAdd =  ['one','two','five','six']
 let listDelete = ['two','five'];
 
 
-var generate = function(listOriginal,listAdd,listDelete) {
+const combineList = function(listOriginal,listAdd,listDelete) {
   let merged = listOriginal.concat(listAdd); 
   let answer = [...new Set(merged)];
   answer = answer.filter( function(x) {

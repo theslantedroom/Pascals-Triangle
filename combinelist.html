@@ -22,9 +22,25 @@
 	<p>Write a function that merges the following inputs into a single list.</p>
 	
 	<div id='parent'></div>
-	<button class='button' onClick='generate(listOriginal,listAdd,listDelete)' > Combine </button>
+	<button class='button' onClick='combineList(listOriginal,listAdd,listDelete)' > Combine </button>
 	
 	<div id='answer'>??</div>
+
+
+	<pre>
+		<code>
+			const combineList = function(listOriginal,listAdd,listDelete) {
+				let merged = listOriginal.concat(listAdd); 
+				let answer = [...new Set(merged)];
+				answer = answer.filter( function(x) {
+				  return !listDelete.includes(x);
+				} );
+				
+				document.getElementById('answer').innerText = `Combined list = [${answer}]`;
+				return answer;
+			};
+		</code>
+	</pre>
 
 
 	
