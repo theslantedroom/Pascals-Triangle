@@ -30,7 +30,6 @@ const memoFibonacci = (n, memo) => {
 	memo = memo || {};
 	// if memo[n] exists is has already been calculated, return it
 	if (memo[n]) {
-		console.log('meno[n]',memo[n]);
 		return memo[n];   
 	};
 	// special cases, fib[0] = 0 and fib[1]=1
